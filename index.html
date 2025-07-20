@@ -13,7 +13,7 @@
       background-color: #d3d3d3;
     }
     .Title {
-      background-color: darkgray;
+      background-color: #4a4a4a;
       color: white;
       font-weight: bold;
       font-family: Arial, Sans-Serif;
@@ -24,7 +24,7 @@
       text-align: center;
     }
     .ItemsTitle {
-      background-color: black;
+      background-color: #4a4a4a;
       color: white;
       font-weight: bold;
       font-family: Segoe UI;
@@ -33,7 +33,7 @@
       text-indent: 32px;
     }
     .ItemsSubTitle {
-      background-color: black;
+      background-color: #4a4a4a;
       color: white;
       font-family: Segoe UI;
       font-size: 20px;
@@ -44,7 +44,7 @@
       padding: 8px;
     }
     .Items {
-      background-color: black;
+      background-color: #4a4a4a;
       color: white;
       font-family: Segoe UI;
       font-size: 16px;
@@ -52,10 +52,6 @@
       text-indent: 16px;
       margin: 0;
       padding: 8px;
-    }
-    .ItemsImage img:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease;
     }
     .ItemsImage {
       background-color: black;
@@ -66,6 +62,22 @@
       margin: 0;
       padding: 8px;
       overflow: hidden;
+      transition: box-shadow 0.3s ease; /* suaviza o brilho */
+    }
+
+    .ItemsImage:hover {
+      box-shadow: 0 0 20px white; /* brilho branco no hover */
+    }
+
+    .ItemsImage img {
+      transition: transform 0.3s ease; /* adiciona transição suave ao scale */
+      max-width: 100%; /* previne estouro da imagem */
+      height: auto;
+      display: block;
+    }
+
+    .ItemsImage img:hover {
+      transform: scale(1.05); /* zoom ao passar o mouse */
     }
 	.Marque {
       background-color: gray;
