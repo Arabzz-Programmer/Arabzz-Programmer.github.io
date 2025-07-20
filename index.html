@@ -63,25 +63,20 @@ html, body {
       margin: 0;
       padding: 8px;
     }
-    .ItemsImage {
-  background-color: #4a4a4a;
-  color: white;
-  display: flex;             
-  justify-content: center;    
-  align-items: center;  
-  margin: 0;
-  padding: 8px;
-  transition: box-shadow 0.3s ease;
-  overflow: visible; /* permitir brilho */
-  border-radius: 8px; /* opcional */
-}
-
-.ItemsImage:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5); /* brilho suave */
-}
-
     .ItemsImage img:hover {
-      transform: scale(1.05); /* zoom ao passar o mouse */
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+    .ItemsImage {
+      background-color: black;
+      color: white;
+      display: flex;             
+      justify-content: center;    
+      align-items: center;  
+      margin: 0;
+      padding: 8px;
+      overflow: hidden;
+       border-radius: 8px;
     }
 	.Marque {
       background-color: gray;
